@@ -1,0 +1,16 @@
+<form action="/users" method="post" accept-charset="UTF-8" data-turbo=false>
+    <input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>">
+    <div class="form-field-wrap">
+        <label for="username">Username:</label>
+        <input type="text" name="user[username]" id="username">
+    </div>
+    <div class="form-field-wrap">
+        <label for="password">Password:</label>
+        <input type="password" name="user[password]" id="password">
+    </div>
+    <div class="form-field-wrap">
+        <label for="email">Email</label>
+        <input type="text" name="user[email]" id="email">
+    </div>
+    <input type="submit" value="Create user">
+</form>
